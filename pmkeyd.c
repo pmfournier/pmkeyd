@@ -132,10 +132,7 @@ int run(int argc, char **argv)
 		}
 
 		if (action_table[ev.code].cmd) {
-			printf("have action for code %u\n", ev.code);
 			system(action_table[ev.code].cmd);
-		} else {
-			printf("no action for code %u\n", ev.code);
 		}
 	}
 
