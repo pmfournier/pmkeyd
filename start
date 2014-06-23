@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dir=$(dirname $0)
+
+$dir/pmkeyd /dev/input/$($dir/finddev Keyboard) $dir/pmkeyd.conf
